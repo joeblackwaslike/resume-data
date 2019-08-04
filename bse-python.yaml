@@ -1,11 +1,11 @@
 meta:
-  version: v2.0.3
-  lastModified: "2018-12-13"
+  version: v2.0.4
+  lastModified: "2019-06-25"
   name: resume
   role: backend-software-engineer
   focus: python
-  company: 
-  notes: 
+  company:
+  notes:
 basic:
   name: Joe Black
   label: Experienced backend software engineer & python enthusiast
@@ -13,10 +13,10 @@ basic:
   phone: (646) 924-7718
   url: https://joeblack.nyc
   location:
-    address: 454 W 36th St, Unit 3fw
+    address: 15 Stanton St, Unit 1B
     city: New York
     region: NY
-    postalCode: "10018"
+    postalCode: "10002"
     countryCode: US
   summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
   profiles:
@@ -42,21 +42,23 @@ skills:
   - Solidity
   - Golang
   - Ruby/Rails
+  - Django
   - Flask
   - Pyramid
 - name: Technologies
   keywords:
   - SQL
   - NoSQL
+  - Redis
+  - ElasticSearch
+  - Microservices
   - RESTful APIs
   - Cryptography
-  - Debian Packaging
+  # - Debian Packaging
   - CI/CD
   - Git/Github
-  - DApps
-  - VoIP
+  # - VoIP
   - LaTeX
-  - JSON-LD
 - name: DevOps
   keywords:
   - Linux
@@ -68,7 +70,18 @@ skills:
   - Ansible
   - Nginx
 work:
-- position: Co-founder & Software Engineer
+- position: Senior Software Engineer
+  name: See-Thru Healthcare
+  startDate: "2019-04-01"
+  endDate: Present
+  location: New York, NY
+  description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
+  summary: Currently leading the architecture and development efforts for a new group tele-therapy platform.
+  highlights:
+  - Drive key architectural decisions regarding data modeling, and API design, technologies leveraged, and third-party integrations focused on maximizing the impact of a small development team.
+  - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
+  - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
+- position: Co-founder & Senior Software Engineer
   name: Telephone
   startDate: "2017-06-01"
   endDate: "2018-12-01"
@@ -81,12 +94,12 @@ work:
   - Designed a decentralized services marketplace to incentivize the development of new features, build community, and support the underlying token economy.
   # - Facilitated best practices by utilizing leading solutions for identity, synchronizing state, file-sharing, and signalling such as uPort, 3Box, Swarm, and PSS.
   # - Implemented daily automated email check-ins, leading to a 50% increase in team communication and morale.
-- position: Software Engineer
+- position: Contract Software Engineer
   name: Black Limited
   startDate: "2014-04-01"
-  endDate: Present
+  endDate: "2019-04-01"
   location: New York, NY
-  description: 
+  description:
   summary: Founded a development and consulting company which I use for short-term contract work referred to me.
   highlights:
   - Developed and deployed a privacy-focused crypto-commerce platform using python, flask, and bitcoin.
@@ -94,7 +107,7 @@ work:
   - Leveraged machine-learning and NLP to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
   - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
   # - Developed a custom CRM solution for use in an integrated, on-site hardware product.
-- position: Software Engineer & DevOps
+- position: Senior Software Engineer & DevOps
   name: Call for America, LLC
   startDate: "2015-08-01"
   endDate: "2017-06-01"
@@ -162,7 +175,7 @@ projects:
   language: python
   url: https://github.com/btcpayserver/btcpay-python
   github:
-    org: btcpayserver 
+    org: btcpayserver
     repo: btcpay-python
     stars: 4
   entity: BTCPay
@@ -195,64 +208,64 @@ projects:
   - jinja2
   - configuration
   - microservices
-- name: Pricing
-  type: open-source
-  language: python
-  url: https://github.com/joeblackwaslike/pricing
-  github:
-    user: joeblackwaslike
-    repo: pricing
-  roles:
-  - Developer
-  - Maintainer
-  description: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
-  keywords:
-  - python
-  - pricing
-  - money
-  - localization
-  - currency
-  - cryptocurrency
-  - currency exchange
-- name: Docker-Kazoo
-  type: open-source
-  language: bash
-  url: https://github.com/telephoneorg/docker-kazoo
-  github:
-    org: telephoneorg
-    repo: docker-kazoo
-    stars: 10
-  docker:
-    org: telephoneorg
-    repo: kazoo
-    pulls: 18000
-  roles:
-  - Developer
-  - Maintainer
-  description: The internet's most downloaded docker image for the Kazoo Cloud PBX platform.
-  keywords:
-  - kazoo
-  - bash
-  - docker
-  - kubernetes
-- name: Docker-Debian
-  type: open-source
-  language: bash
-  url: https://github.com/telephoneorg/debian
-  github:
-    org: telephoneorg
-    repo: debian
-    stars: 4
-  docker:
-    org: telephoneorg
-    repo: debian
-    pulls: 465
-  roles:
-  - Developer
-  - Maintainer
-  description: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
-  keywords:
-  - linux
-  - bash
-  - docker
-  - base-image
+# - name: Pricing
+#   type: open-source
+#   language: python
+#   url: https://github.com/joeblackwaslike/pricing
+#   github:
+#     user: joeblackwaslike
+#     repo: pricing
+#   roles:
+#   - Developer
+#   - Maintainer
+#   description: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
+#   keywords:
+#   - python
+#   - pricing
+#   - money
+#   - localization
+#   - currency
+#   - cryptocurrency
+#   - currency exchange
+# - name: Docker-Kazoo
+#   type: open-source
+#   language: bash
+#   url: https://github.com/telephoneorg/docker-kazoo
+#   github:
+#     org: telephoneorg
+#     repo: docker-kazoo
+#     stars: 10
+#   docker:
+#     org: telephoneorg
+#     repo: kazoo
+#     pulls: 18000
+#   roles:
+#   - Developer
+#   - Maintainer
+#   description: The internet's most downloaded docker image for the Kazoo Cloud PBX platform.
+#   keywords:
+#   - kazoo
+#   - bash
+#   - docker
+#   - kubernetes
+# - name: Docker-Debian
+#   type: open-source
+#   language: bash
+#   url: https://github.com/telephoneorg/debian
+#   github:
+#     org: telephoneorg
+#     repo: debian
+#     stars: 4
+#   docker:
+#     org: telephoneorg
+#     repo: debian
+#     pulls: 465
+#   roles:
+#   - Developer
+#   - Maintainer
+#   description: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
+#   keywords:
+#   - linux
+#   - bash
+#   - docker
+#   - base-image
