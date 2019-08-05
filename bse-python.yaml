@@ -6,12 +6,14 @@ meta:
   focus: python
   company:
   notes:
-basic:
+  theme: elegant
+basics:
   name: Joe Black
   label: Experienced backend software engineer & python enthusiast
   email: me@joeblack.nyc
   phone: (646) 924-7718
-  url: https://joeblack.nyc
+  website: https://joeblack.nyc
+  picture: https://avatars1.githubusercontent.com/u/1109300
   location:
     address: 15 Stanton St, Unit 1B
     city: New York
@@ -71,7 +73,7 @@ skills:
   - Nginx
 work:
 - position: Senior Software Engineer
-  name: See-Thru Healthcare
+  company: See-Thru Healthcare
   startDate: "2019-04-01"
   endDate: Present
   location: New York, NY
@@ -82,7 +84,7 @@ work:
   - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
   - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
 - position: Co-founder & Senior Software Engineer
-  name: Telephone
+  company: Telephone
   startDate: "2017-06-01"
   endDate: "2018-12-01"
   location: New York, NY
@@ -95,11 +97,11 @@ work:
   # - Facilitated best practices by utilizing leading solutions for identity, synchronizing state, file-sharing, and signalling such as uPort, 3Box, Swarm, and PSS.
   # - Implemented daily automated email check-ins, leading to a 50% increase in team communication and morale.
 - position: Contract Software Engineer
-  name: Black Limited
+  company: Black Limited
   startDate: "2014-04-01"
   endDate: "2019-04-01"
   location: New York, NY
-  description:
+  description: Self-founded contract LLC
   summary: Founded a development and consulting company which I use for short-term contract work referred to me.
   highlights:
   - Developed and deployed a privacy-focused crypto-commerce platform using python, flask, and bitcoin.
@@ -108,7 +110,7 @@ work:
   - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
   # - Developed a custom CRM solution for use in an integrated, on-site hardware product.
 - position: Senior Software Engineer & DevOps
-  name: Call for America, LLC
+  company: Call for America, LLC
   startDate: "2015-08-01"
   endDate: "2017-06-01"
   location: New York, NY
@@ -122,7 +124,7 @@ work:
   - Led efforts to draft and implement testing, CI/CD, and documentation standards resulting in a 60% increase in developer productivity.
   - Developed many open-source projects such as TmplD, CouchDiscover, Docker-Debian, and Docker-Kazoo.
 - position: Co-founder & Software Engineer
-  name: Unorthodox, LLC
+  company: Unorthodox, LLC
   startDate: "2013-06-01"
   endDate: "2015-08-01"
   location: San Francisco, CA
@@ -138,14 +140,14 @@ work:
 volunteer:
 - organization: Noisebridge Hackerspace
   position: Mentor
-  url: https://noisebridge.net
+  website: https://noisebridge.net
   startDate: "2013-01-01"
   endDate: "2015-01-01"
   location: San Francisco, CA
   summary: Mentored hackers and students from local universities and code bootcamps with various engineering related projects and tasks.
 - organization: HackMiami Conference
   position: Speaker
-  url: https://hackmiamicon.com
+  website: https://hackmiamicon.com
   startDate: "2014-01-01"
   endDate: "2014-01-01"
   location: Miami, FL
@@ -165,7 +167,7 @@ projects:
   roles:
   - Developer
   - Maintainer
-  description: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
+  summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
   keywords:
   - python
   - cryptography
@@ -182,7 +184,7 @@ projects:
   roles:
   - Developer
   - Maintainer
-  description: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
+  summary: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
   keywords:
   - python
   - cryptocurrency
@@ -199,7 +201,7 @@ projects:
   roles:
   - Developer
   - Maintainer
-  description: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
+  summary: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
   keywords:
   - python
   - containers
@@ -218,7 +220,7 @@ projects:
 #   roles:
 #   - Developer
 #   - Maintainer
-#   description: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
+#   summary: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
 #   keywords:
 #   - python
 #   - pricing
@@ -242,7 +244,7 @@ projects:
 #   roles:
 #   - Developer
 #   - Maintainer
-#   description: The internet's most downloaded docker image for the Kazoo Cloud PBX platform.
+#   summary: The internet's most downloaded docker image for the Kazoo Cloud PBX platform.
 #   keywords:
 #   - kazoo
 #   - bash
@@ -263,7 +265,7 @@ projects:
 #   roles:
 #   - Developer
 #   - Maintainer
-#   description: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
+#   summary: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
 #   keywords:
 #   - linux
 #   - bash
