@@ -1,6 +1,6 @@
 meta:
-  version: v2.0.4
-  lastModified: "2019-06-25"
+  version: v2.1.0
+  lastModified: "2020-03-14"
   name: resume
   role: backend-software-engineer
   focus: python
@@ -20,7 +20,7 @@ basics:
     region: NY
     postalCode: "10002"
     countryCode: US
-  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
+  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
   profiles:
   - network: Github
     username: joeblackwaslike
@@ -37,25 +37,27 @@ awards:
 skills:
 - name: Languages
   keywords:
-  - Python 2
-  - Python 3
+  - Python 2 \& 3
   - Bash
   - Javascript
+  - GraphQL
   - Solidity
   - Golang
   - Ruby/Rails
   - Django
   - Flask
-  - Pyramid
+  - Starlette
 - name: Technologies
   keywords:
   - SQL
   - NoSQL
+  - Neo4j/Cypher
   - Redis
+  - Airflow
   - ElasticSearch
   - Microservices
   - RESTful APIs
-  - Cryptography
+  # - Cryptography
   # - Debian Packaging
   - CI/CD
   - Git/Github
@@ -72,14 +74,27 @@ skills:
   - Ansible
   - Nginx
 work:
+- position: Senior Python Engineer
+  company: Code & Theory
+  startDate: "2019-08-26"
+  endDate: "2020-03-12"
+  location: New York, NY
+  description: Digital-first agency where my project was to work on the CNN API/Datacloud project.
+  summary: Brought in to work on the CNN Datacloud powering John King's magic wall and the CNN election center.
+  highlights:
+  - Brought the Datacloud from POC to a production ready release which included the development of new ETL pipelines in Airflow and Neo4j, and a custom ORM-like OGM framework based on Neomodel capable of auto-generating it's own detailed documentation.
+  - Architected and developed an ASGI geospatial-temporal data microservice with interactive documentation and playground using python, postGIS, GeoAlchemy, Starlette, Fast-API, and swagger.
+  - Spearheaded an internal tech-leadership project that taught and mentored python engineers of all experience levels across multiple continents.
+  - Architected and developed a new declarative automation-testing framework in pytest and selenium that dynamically detects a page's components and builds all test cases dynamically.
 - position: Senior Software Engineer
   company: See-Thru Healthcare
   startDate: "2019-04-01"
-  location: New York, NY
+  endDate: "2019-08-01"
+  location: Brooklyn, NY
   description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
-  summary: Currently leading the architecture and development efforts for a new group tele-therapy platform.
+  summary: Lead the architecture and development efforts for a new group tele-therapy platform.
   highlights:
-  - Drive key architectural decisions regarding data modeling, and API design, technologies leveraged, and third-party integrations focused on maximizing the impact of a small development team.
+  - Drove key architectural decisions regarding data modeling and API design, technologies leveraged, and third-party integrations to maximize the effeciency of a small development team.
   - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
   - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
 - position: Co-founder & Senior Software Engineer
@@ -105,7 +120,7 @@ work:
   highlights:
   - Developed and deployed a privacy-focused crypto-commerce platform using python, flask, and bitcoin.
   - Developed tools in python used by the Security Scorecard platform for IP attribution of vendors.
-  - Leveraged machine-learning and NLP to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
+  - Leveraged NTLK to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
   - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
   # - Developed a custom CRM solution for use in an integrated, on-site hardware product.
 - position: Senior Software Engineer & DevOps
@@ -119,9 +134,9 @@ work:
   - Slashed maintenance costs over 50% by automating the deployment and maintenance of critical infrastructure using docker, kubernetes, python, and bash.
   - Developed and implemented custom tools for containerizing self-configuring microservices using python, bash, C, and golang.
   - Increased platform stability over 30% by spearheading the development of tooling for spec-testing containers using bash and goss.
-  - Diagnosed and upgraded overloaded MySQL servers to Percona, eliminating daily downtime entirely.
-  - Led efforts to draft and implement testing, CI/CD, and documentation standards resulting in a 60% increase in developer productivity.
-  - Developed many open-source projects such as TmplD, CouchDiscover, Docker-Debian, and Docker-Kazoo.
+  # - Diagnosed and upgraded overloaded MySQL servers to Percona, eliminating daily downtime entirely.
+  # - Led efforts to draft and implement testing, CI/CD, and documentation standards resulting in a 60% increase in developer productivity.
+  # - Developed many open-source projects such as TmplD, CouchDiscover, Docker-Debian, and Docker-Kazoo.
 - position: Co-founder & Software Engineer
   company: Unorthodox, LLC
   startDate: "2013-06-01"
@@ -132,9 +147,9 @@ work:
   highlights:
   - Improved delivery over 50% using MTA throttling based on provider history, IP reputation, and SMTP reject codes.
   - Implemented real-time analytics to improve campaign insights using python, AWS, URL redirection, and kibana.
-  - Implemented automatically deploying infrastructure using vagrant, docker, ansible, and bash.
+  # - Implemented automatically deploying infrastructure using vagrant, docker, ansible, and bash.
   - Increased targeting relevancy over 100% by enriching existing demographic data using third-party data append APIs such as TowerData and FullContact.
-  - Built tools to predict the actions of spam-filters based on content patterns and tokens using python and docker.
+  # - Built tools to predict the actions of spam-filters based on content patterns and tokens using python and docker.
   # - Developed algorithms for custom audience building to increase campaign relevancy and predict the actions of spam filters.
 volunteer:
 - organization: Noisebridge Hackerspace
@@ -146,7 +161,7 @@ volunteer:
   summary: Mentored hackers and students from local universities and code bootcamps with various engineering related projects and tasks.
 - organization: HackMiami Conference
   position: Speaker
-  website: https://hackmiamicon.com
+  website: https://hackmiami.com
   startDate: "2014-01-01"
   endDate: "2014-01-01"
   location: Miami, FL
@@ -156,21 +171,21 @@ education:
   area: Computer Science
   location: Indianapolis, IN
 projects:
-- name: GPGKeyring
-  type: open-source
-  language: python
-  url: https://github.com/joeblackwaslike/gpgkeyring
-  github:
-    user: joeblackwaslike
-    repo: gpgkeyring
-  roles:
-  - Developer
-  - Maintainer
-  summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
-  keywords:
-  - python
-  - cryptography
-  - GPG
+# - name: GPGKeyring
+#   type: open-source
+#   language: python
+#   url: https://github.com/joeblackwaslike/gpgkeyring
+#   github:
+#     user: joeblackwaslike
+#     repo: gpgkeyring
+#   roles:
+#   - Developer
+#   - Maintainer
+#   summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
+#   keywords:
+#   - python
+#   - cryptography
+#   - GPG
 - name: BTCPay-python
   type: open-source
   language: python
