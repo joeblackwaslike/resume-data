@@ -20,7 +20,7 @@ basics:
     region: NY
     postalCode: "10002"
     countryCode: US
-  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
+  # summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
   profiles:
   - network: Github
     username: joeblackwaslike
@@ -80,21 +80,22 @@ work:
   endDate: "2020-03-12"
   location: New York, NY
   description: Digital-first agency where my project was to work on the CNN API/Datacloud project.
-  summary: Brought in to work on the CNN Datacloud powering John King's magic wall and the CNN election center.
+  summary: Brought in to work on the CNN Datacloud, which powers John King's Magic Wall, a multi-touch interface for displaying real-time and historical election results and various data of a geospatial nature that changes over time, as well as the CNN election center website.
   highlights:
-  - Brought the Datacloud from POC to a production ready release which included the development of new ETL pipelines in Airflow and Neo4j, and a custom ORM-like OGM framework based on Neomodel capable of auto-generating it's own detailed documentation.
-  - Architected and developed an ASGI geospatial-temporal data microservice with interactive documentation and playground using python, postGIS, GeoAlchemy, Starlette, Fast-API, and swagger.
+  - Brought the Datacloud from POC to a production ready release which included the development of new extract transform load pipelines in Airflow and Neo4j to implement new features such as FEC financial summaries for election candidates and election tracking poll data split over 20+ dimensions. Additionally, I customized an ORM-like object graph mapper framework based on Neomodel to add new capabilities such as building it's own detailed markdown documentation from metadata attached to each model, it's properties, and relationships.
+  - Architected and developed an ASGI geospatial-temporal data microservice with interactive documentation and playground in python, postGIS, GeoAlchemy, Starlette, Fast-API, and swagger enabling high performance point-in-polygon queries to be easily described in json as an array of filter objects to be parsed into an AST with arbitrary boolean expressions.  This capability was critical to generating heat-maps of US election campaign donations by state, county, and congressional district as well as answering the question "Given a geo-coordinate and date, who were my representatives at the local, state, and federal level.
   - Spearheaded an internal tech-leadership project that taught and mentored python engineers of all experience levels across multiple continents.
-  - Architected and developed a new declarative automation-testing framework in pytest and selenium that dynamically detects a page's components and builds all test cases dynamically.
+  - Architected and developed a declarative automation-testing framework in pytest and selenium that dynamically detected the angular front-end components and built all test cases dynamically in order to reduce repetition in the codebase and adapt to front-end changes automatically that would otherwise break numerous scattered tests.  Among the many benefits were reducing the automation testing codebase to 1/10th it's size, improving developer productivity by many orders of magnitude, and reducing the number of regressions per month by over 60%.
 - position: Senior Software Engineer
   company: See-Thru Healthcare
   startDate: "2019-04-01"
   endDate: "2019-08-01"
   location: Brooklyn, NY
   description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
-  summary: Lead the architecture and development efforts for a new group tele-therapy platform.
+  summary: See-Thru Healthcare was a small (5 person, 2 dev), seed-funded, health-tech startup whose main product was a transparent marketplace with a multi-faceted search engine for discovering and booking appointments with behavior-health telemedicine providers.
   highlights:
-  - Drove key architectural decisions regarding data modeling and API design, technologies leveraged, and third-party integrations to maximize the effeciency of a small development team.
+  - Lead the architecture and development efforts for a new group tele-therapy platform to attract thousands of new providers and patients to our main product, the marketplace.
+  - Drove key architectural decisions to maximize the productivity of a small development team such as integrating with zoom for our real-time video platform, the selection of GraphQL for our API and design of the GraphQL schema, and hosting the database and backend on AWS lambda by using Zappa to wrap Flask & Graphene.
   - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
   - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
 - position: Co-founder & Senior Software Engineer
@@ -103,26 +104,24 @@ work:
   endDate: "2018-12-01"
   location: New York, NY
   description: Pre-ICO telecommunications dapp in stealth-mode
-  summary: Co-founded a start-up to fund and develop a privacy-focused decentralized communications app.
+  summary: Co-founded a Pre-ICO start-up to research, fund, and develop a privacy-focused, decentralized communications and messaging app similar to Signal but unblockable by firewalls and not reliant on centralized hosting infrastructure and governance.
   highlights:
-  - Collaboratively architected a decentralized protocol and app using ethereum, solidity, python, and javascript.
-  - Educated and advised co-founders on the constraints posed by decentralized architecture and the ICO funding process to better align the vision of the company and viability of the product.
-  - Designed a decentralized services marketplace to incentivize the development of new features, build community, and support the underlying token economy.
-  # - Facilitated best practices by utilizing leading solutions for identity, synchronizing state, file-sharing, and signalling such as uPort, 3Box, Swarm, and PSS.
-  # - Implemented daily automated email check-ins, leading to a 50% increase in team communication and morale.
-- position: Contract Software Engineer
+  - Performed extensive research in decentralized architecture, the ICO funding process, encryption, smart-contracts, decentralized identity and key recovery, etc.
+  - Collaboratively architected a decentralized protocol and implementation spec using ethereum, solidity, python, and javascript.
+  - Leveraged dark-routing capabilities of Postal Service over Swarm (PSS) to prevent passive traffic analysis from being able to identify who is talking to who.
+  - Designed a decentralized services marketplace to allow discovery of services and incentivize the development of new services to build community and support the underlying token economy.  Standard services included multi-node media relaying to prevent IP discovery and secure receipt and retrieval of incoming messages when offline.
+- position: Software Engineer Consultant
   company: Black Limited
   startDate: "2014-04-01"
   endDate: "2019-04-01"
   location: New York, NY
   description: Self-founded contract LLC
-  summary: Founded a development and consulting company which I use for short-term contract work referred to me.
+  summary: Founded a one-person development consulting company which worked on many short-term projects (typicaly several days up to a month long).
   highlights:
-  - Developed and deployed a privacy-focused crypto-commerce platform using python, flask, and bitcoin.
-  - Developed tools in python used by the Security Scorecard platform for IP attribution of vendors.
+  - Developed and deployed a crypto-commerce platform that generated over $1M a year in revenue and delivered higher privacy and security by hosting on the TOR network, accepting payments in bitcoin, storing only public keys on the server, encrypting all data at rest, and performing all decryption client-side using a locally hosted admin dashboard that communicated with the server securely using client-side TLS certificates and PortKnockD.
+  - Developed tools used by the Security Scorecard platform to discover current and historical IP addresses/subnets of companies in order to evaluate the security of all third-party vendors that their customers integrate/share data with.
   - Leveraged NTLK to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
   - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
-  # - Developed a custom CRM solution for use in an integrated, on-site hardware product.
 - position: Senior Software Engineer & DevOps
   company: Call for America, LLC
   startDate: "2015-08-01"
@@ -134,9 +133,6 @@ work:
   - Slashed maintenance costs over 50% by automating the deployment and maintenance of critical infrastructure using docker, kubernetes, python, and bash.
   - Developed and implemented custom tools for containerizing self-configuring microservices using python, bash, C, and golang.
   - Increased platform stability over 30% by spearheading the development of tooling for spec-testing containers using bash and goss.
-  # - Diagnosed and upgraded overloaded MySQL servers to Percona, eliminating daily downtime entirely.
-  # - Led efforts to draft and implement testing, CI/CD, and documentation standards resulting in a 60% increase in developer productivity.
-  # - Developed many open-source projects such as TmplD, CouchDiscover, Docker-Debian, and Docker-Kazoo.
 - position: Co-founder & Software Engineer
   company: Unorthodox, LLC
   startDate: "2013-06-01"
@@ -147,10 +143,7 @@ work:
   highlights:
   - Improved delivery over 50% using MTA throttling based on provider history, IP reputation, and SMTP reject codes.
   - Implemented real-time analytics to improve campaign insights using python, AWS, URL redirection, and kibana.
-  # - Implemented automatically deploying infrastructure using vagrant, docker, ansible, and bash.
   - Increased targeting relevancy over 100% by enriching existing demographic data using third-party data append APIs such as TowerData and FullContact.
-  # - Built tools to predict the actions of spam-filters based on content patterns and tokens using python and docker.
-  # - Developed algorithms for custom audience building to increase campaign relevancy and predict the actions of spam filters.
 volunteer:
 - organization: Noisebridge Hackerspace
   position: Mentor
