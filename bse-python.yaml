@@ -1,12 +1,14 @@
 meta:
-  version: v2.2.1
-  lastModified: "2020-05-26"
+  version: v3.0.1
+  lastModified: "2024-04-25"
   name: resume
   role: backend-software-engineer
   focus: python
   company:
   notes:
   theme: elegant
+  exclude:
+  - education
 basics:
   name: Joe Black
   label: Experienced backend software engineer & python enthusiast
@@ -14,13 +16,13 @@ basics:
   phone: (646) 924-7718
   website: https://joeblack.nyc
   picture: https://avatars1.githubusercontent.com/u/1109300
+  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
   location:
-    address: 15 Stanton St, Unit 1B
+    address: 158 E 126th St, Unit 1114
     city: New York
     region: NY
-    postalCode: "10002"
+    postalCode: "10035"
     countryCode: US
-  # summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
   profiles:
   - network: Github
     username: joeblackwaslike
@@ -30,68 +32,76 @@ basics:
     url: https://www.linkedin.com/in/joeblack949
 awards:
 - title: Winner
-  date: "2014-01-01"
+  date: "2014-01"
   awarder: Stanford University
   location: Palo Alto, CA
   summary: Stanford Datajam, a hackathon sponsored by the US Department of Education.
 skills:
 - name: Languages
   keywords:
-  - Python 2 \& 3
-  - Bash
+  - Python
+  - Shell
   - Javascript
-  - GraphQL
-  - Cypher
   - Solidity
   - Golang
   - Ruby/Rails
-  - Django
-  - Flask
 - name: Technologies
   keywords:
   - SQL
   - NoSQL
-  - Neo4j
   - Redis
-  - Airflow
-  - ElasticSearch
-  - Microservices
-  - RESTful APIs
-  - Starlette
+  - Neo4j
   - Cryptography
-  # - Debian Packaging
-  - CI/CD
-  - Git/Github
-  # - VoIP
+  - gRPC
+  - REST
+  - GraphQL
+  - LLMs/LangChain
+  - Blockchain
+  - OAuth/OIDC
   - LaTeX
-- name: Infrastructure
+- name: Infra
   keywords:
   - Linux
   - Unix
   - Docker
   - Kubernetes
   - AWS
-  - GCP
-  - Ansible
-  - Nginx
+  - Datadog
+  - Git/Github
 work:
-- position: Senior Python Engineer
-  company: Code & Theory
-  startDate: "2019-08-26"
-  endDate: "2020-03-12"
+- company: Magic Labs, Inc
+  position: Senior Software Engineer (Backend)
+  website: https://magic.link
+  startDate: "2020-12"
+  endDate: "2024-03"
+  location: San Francisco, CA - Remote
+  description: Series-B startup web3 IaaS provider of non-custodial wallets and passwordless authentication.
+  summary: Joined as employee 10 to work on the core product including backend services and APIs that power the Magic SDK.
+  highlights:
+  - "Mentored 8-10 backend engineers across multiple teams and of varying skill levels through regular 1:1s, pairing sessions, regular review of technical design docs for feature development, code review, and establishing formal documentation covering engineering principles, python style guides, api design standards, testing guidelines, best practices, etc."
+  - "Developer tooling: Crud Router, CLI Router, Factor Verifier, Deferred Calls, ORM Signals, Dependency Injection, etc."
+  - "Architected and developed new Wallet-as-a-Service product to enable go-to-market team to capture massive growth in the enterprise web3 space through clients such as: clubhouse, mattel, Macys, Synchrony, 7Eleven, Forbes, directly responsible for several million in additional annual recurring revenue."
+  - 'Mitigated evil proxy phishing attacks using custom developed device-based, cryptographic root-of-trust protocol.  Currently pending provisional patent application titled, "Anonymous Device Fingerprinting for Device Verification."'
+  - "API Scaling & Optimization efforts: Created a set of tools and processes for optimizing the performance of API endpoints that averaged 5-10x speed improvement."
+- company: Code & Theory
+  position: Senior Python Engineer
+  website: https://www.codeandtheory.com
+  startDate: "2019-08"
+  endDate: "2020-03"
   location: New York, NY
   description: Digital-first agency where my project was to work on the CNN API/Datacloud project.
   summary: Brought in to work on the CNN Datacloud, which powers John King's Magic Wall, a multi-touch interface for displaying real-time and historical election results and various data of a geospatial nature that changes over time, as well as the CNN election center website.
   highlights:
   - Brought the Datacloud from POC to a production ready release which included the development of new extract transform load pipelines in Airflow and Neo4j to implement new features such as FEC financial summaries for election candidates and election tracking poll data split over 20+ dimensions
   - Customized an ORM-like object graph mapper framework based on Neomodel to add new capabilities such as building it's own detailed markdown documentation from metadata attached to each model, it's properties, and relationships.
-  - Architected and developed an ASGI geospatial-temporal data microservice that was critical to generating heat-maps of US election campaign donations by state, county, and congressional district as well as answering the question, "Given a geo-coordinate and date, who were my representatives at the local, state, and federal level." This microservice enabled high-performance point-in-polygon queries to be easily described in json as an array of filter objects that were parsed into an AST with arbitrary boolean expressions and included interactive documentation and playground.  Technologies leveraged python, postGIS, GeoAlchemy, Starlette, Fast-API, & Swagger.
+  - Architected and developed a geospatial-temporal data microservice used for generating heat-maps of US election campaign donations and lookup representatives given geo-coordinates and a date.
   - Spearheaded an internal tech-leadership project that taught and mentored python engineers of all experience levels across multiple continents.
-  - Architected and developed a declarative automation-testing framework in pytest and selenium that reduced the testing codebase by 90%, improved developer productivity by an order of magnitude, and reduced the number of regressions per month by over 60%.  This framework dynamically detected the front-end angular components and built all test cases dynamically in order to reduce repetition in the codebase and adapt automatically to front-end changes that would otherwise break numerous scattered tests.
-- position: Senior Software Engineer
-  company: See-Thru Healthcare
-  startDate: "2019-04-01"
-  endDate: "2019-08-01"
+  # - Architected and developed a declarative automation-testing framework in pytest and selenium that reduced the testing codebase by 90%, improved developer productivity by an order of magnitude, and reduced the number of regressions per month by over 60%.  This framework dynamically detected the front-end angular components and built all test cases dynamically in order to reduce repetition in the codebase and adapt automatically to front-end changes that would otherwise break numerous scattered tests.
+- company: See-Thru Healthcare
+  position: Senior Software Engineer
+  website: http://seethru.healthcare
+  startDate: "2019-04"
+  endDate: "2019-08"
   location: Brooklyn, NY
   description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
   summary: See-Thru Healthcare was a small (5 person, 2 dev), seed-funded, health-tech startup whose main product was a transparent marketplace with a multi-faceted search engine for discovering and booking appointments with behavior-health telemedicine providers.
@@ -100,10 +110,11 @@ work:
   - Drove key architectural decisions to maximize the productivity of a small development team such as integrating with zoom for our real-time video platform, the selection of GraphQL for our API and design of the GraphQL schema, and hosting the database and backend on AWS lambda by using Zappa to wrap Flask & Graphene.
   - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
   - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
-- position: Co-founder & Senior Software Engineer
-  company: Telephone
-  startDate: "2017-06-01"
-  endDate: "2018-12-01"
+- company: Telephone 
+  position: Co-founder & Senior Software Engineer
+  website: https://telephone.org
+  startDate: "2017-06"
+  endDate: "2018-12"
   location: New York, NY
   description: Pre-ICO telecommunications dapp in stealth-mode
   summary: Co-founded a Pre-ICO start-up to research, fund, and develop a privacy-focused, decentralized communications and messaging app similar to Signal but unblockable by firewalls and not reliant on centralized hosting infrastructure and governance.
@@ -112,40 +123,40 @@ work:
   - Collaboratively architected a decentralized protocol and implementation spec using ethereum, solidity, python, and javascript.
   - Leveraged dark-routing capabilities of Postal Service over Swarm (PSS) to prevent passive traffic analysis from being able to identify who is talking to who.
   - Designed a decentralized services marketplace to allow discovery of services and incentivize the development of new services to build community and support the underlying token economy.  Standard services included multi-node media relaying to prevent IP discovery and secure receipt and retrieval of incoming messages when offline.
-- position: Software Engineer Consultant
-  company: Black Limited
-  startDate: "2014-04-01"
-  endDate: "2019-04-01"
-  location: New York, NY
-  description: Self-founded contract LLC
-  summary: Founded a one-person development consulting company which worked on many short-term projects.
-  highlights:
-  - Developed and deployed a crypto-commerce platform that generated over $1M a year in revenue and delivered higher privacy and security by hosting on the TOR network, accepting payments in bitcoin, storing only public keys on the server, encrypting all data at rest, and performing all decryption client-side using a locally hosted admin dashboard that communicated with the server securely using client-side TLS certificates and PortKnockD.
-  - Developed tools used by the Security Scorecard platform to discover current and historical IP addresses/subnets of companies in order to evaluate the security of all third-party vendors that their customers integrate/share data with.
-  - Leveraged NTLK to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
-  - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
-- position: Senior Software Engineer & DevOps
-  company: Call for America, LLC
-  startDate: "2015-08-01"
-  endDate: "2017-06-01"
-  location: New York, NY
-  description: Voice-over-IP provider
-  summary: Built and maintained a bare-metal kubernetes-based infrastructure to scale the Kazoo cloud PBX platform.
-  highlights:
-  - Slashed maintenance costs over 50% by automating the deployment and maintenance of critical infrastructure using docker, kubernetes, python, and bash.
-  - Developed and implemented custom tools for containerizing self-configuring microservices using Python, Bash, C, and Golang.
-  - Increased platform stability over 30% by spearheading the development of tooling for spec-testing containers using bash and goss.
-- position: Co-founder & Software Engineer
-  company: Unorthodox, LLC
-  startDate: "2013-06-01"
-  endDate: "2015-08-01"
-  location: San Francisco, CA
-  description: Email Marketing
-  summary: Co-founded and developed a small data-driven email-marketing platform with real-time analytics in python.
-  highlights:
-  - Improved email delivery over 50% with mail transfer agent throttling based on provider history, IP reputation, and SMTP reject codes.
-  - Implemented real-time analytics to improve campaign insights using Python, AWS, URL redirection, and Kibana.
-  - Increased targeting relevancy over 100% by enriching existing demographic data via third-party data append APIs such as TowerData and FullContact.
+# - position: Software Engineer Consultant
+#   company: Black Limited
+#   startDate: "2014-04-01"
+#   endDate: "2019-04-01"
+#   location: New York, NY
+#   description: Self-founded contract LLC
+#   summary: Founded a one-person development consulting company which worked on many short-term projects.
+#   highlights:
+#   - Developed and deployed a crypto-commerce platform that generated over $1M a year in revenue and delivered higher privacy and security by hosting on the TOR network, accepting payments in bitcoin, storing only public keys on the server, encrypting all data at rest, and performing all decryption client-side using a locally hosted admin dashboard that communicated with the server securely using client-side TLS certificates and PortKnockD.
+#   - Developed tools used by the Security Scorecard platform to discover current and historical IP addresses/subnets of companies in order to evaluate the security of all third-party vendors that their customers integrate/share data with.
+#   - Leveraged NTLK to identify inconsistencies across legal contracts for a law firm specializing in foreclosures.
+#   - Developed open-source python projects such as the official BTCPay python client, GPGKeyring, and Pricing.
+# - position: Senior Software Engineer & DevOps
+#   company: Call for America, LLC
+#   startDate: "2015-08-01"
+#   endDate: "2017-06-01"
+#   location: New York, NY
+#   description: Voice-over-IP provider
+#   summary: Built and maintained a bare-metal kubernetes-based infrastructure to scale the Kazoo cloud PBX platform.
+#   highlights:
+#   - Slashed maintenance costs over 50% by automating the deployment and maintenance of critical infrastructure using docker, kubernetes, python, and bash.
+#   - Developed and implemented custom tools for containerizing self-configuring microservices using Python, Bash, C, and Golang.
+#   - Increased platform stability over 30% by spearheading the development of tooling for spec-testing containers using bash and goss.
+# - position: Co-founder & Software Engineer
+#   company: Unorthodox, LLC
+#   startDate: "2013-06-01"
+#   endDate: "2015-08-01"
+#   location: San Francisco, CA
+#   description: Email Marketing
+#   summary: Co-founded and developed a small data-driven email-marketing platform with real-time analytics in python.
+#   highlights:
+#   - Improved email delivery over 50% with mail transfer agent throttling based on provider history, IP reputation, and SMTP reject codes.
+#   - Implemented real-time analytics to improve campaign insights using Python, AWS, URL redirection, and Kibana.
+#   - Increased targeting relevancy over 100% by enriching existing demographic data via third-party data append APIs such as TowerData and FullContact.
 volunteer:
 - organization: Noisebridge Hackerspace
   position: Mentor
@@ -169,48 +180,73 @@ projects:
 - name: BTCPay-python
   type: open-source
   language: python
+  summary: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
   url: https://github.com/btcpayserver/btcpay-python
   github:
     org: btcpayserver
     repo: btcpay-python
-    stars: 4
+    stars: 79
+    forks: 27
   entity: BTCPay
   roles:
   - Developer
   - Maintainer
-  summary: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
   keywords:
   - python
   - cryptocurrency
   - bitcoin
   - RESTful APIs
   - BTCPay
-- name: GPGKeyring
+- name: coinaddr
   type: open-source
   language: python
-  url: https://github.com/joeblackwaslike/gpgkeyring
+  summary: Cryptocurrency address inspection/validation library for python
+  url: https://github.com/joeblackwaslike/coinaddr
   github:
-    user: joeblackwaslike
-    repo: gpgkeyring
+    org: joeblackwaslike
+    repo: coinaddr
+    stars: 18
+    forks: 20
   roles:
   - Developer
   - Maintainer
-  summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
+  keywords:
+  - blockchain
+  - python
+  - validation
+  - cryptocurrency
+- name: Pricing
+  type: open-source
+  language: python
+  summary: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
+  url: https://github.com/joeblackwaslike/pricing
+  github:
+    user: joeblackwaslike
+    repo: pricing
+    stars: 15
+  roles:
+  - Developer
+  - Maintainer
   keywords:
   - python
-  - cryptography
-  - GPG
+  - pricing
+  - money
+  - localization
+  - currency
+  - cryptocurrency
+  - currency exchange
 - name: TmplD
   type: open-source
   language: python
+  summary: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
   url: https://github.com/joeblackwaslike/tmpld
   github:
     user: joeblackwaslike
     repo: tmpld
+    forks: 1
   roles:
   - Developer
   - Maintainer
-  summary: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
   keywords:
   - python
   - containers
@@ -219,47 +255,6 @@ projects:
   - jinja2
   - configuration
   - microservices
-- name: Docker-Debian
-  type: open-source
-  language: bash
-  url: https://github.com/telephoneorg/debian
-  github:
-    org: telephoneorg
-    repo: debian
-    stars: 4
-  docker:
-    org: telephoneorg
-    repo: debian
-    pulls: 465
-  roles:
-  - Developer
-  - Maintainer
-  summary: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
-  keywords:
-  - linux
-  - bash
-  - docker
-  - base-image
-
-# - name: Pricing
-#   type: open-source
-#   language: python
-#   url: https://github.com/joeblackwaslike/pricing
-#   github:
-#     user: joeblackwaslike
-#     repo: pricing
-#   roles:
-#   - Developer
-#   - Maintainer
-#   summary: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including crypto and custom.
-#   keywords:
-#   - python
-#   - pricing
-#   - money
-#   - localization
-#   - currency
-#   - cryptocurrency
-#   - currency exchange
 # - name: Docker-Kazoo
 #   type: open-source
 #   language: bash
@@ -281,4 +276,39 @@ projects:
 #   - bash
 #   - docker
 #   - kubernetes
-
+# - name: GPGKeyring
+#   type: open-source
+#   language: python
+#   url: https://github.com/joeblackwaslike/gpgkeyring
+#   github:
+#     user: joeblackwaslike
+#     repo: gpgkeyring
+#   roles:
+#   - Developer
+#   - Maintainer
+#   summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
+#   keywords:
+#   - python
+#   - cryptography
+#   - GPG
+# - name: Docker-Debian
+#   type: open-source
+#   language: bash
+#   url: https://github.com/telephoneorg/debian
+#   github:
+#     org: telephoneorg
+#     repo: debian
+#     stars: 4
+#   docker:
+#     org: telephoneorg
+#     repo: debian
+#     pulls: 465
+#   roles:
+#   - Developer
+#   - Maintainer
+#   summary: Custom, minimal debian jessie/stretch distro for docker in only 24MB!
+#   keywords:
+#   - linux
+#   - bash
+#   - docker
+#   - base-image
