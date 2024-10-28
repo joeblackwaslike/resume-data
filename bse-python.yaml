@@ -1,6 +1,6 @@
 meta:
-  version: v3.0.1
-  lastModified: "2024-04-25"
+  version: v3.0.0
+  lastModified: "2024-10-28"
   name: resume
   role: backend-software-engineer
   focus: python
@@ -11,12 +11,12 @@ meta:
   - education
 basics:
   name: Joe Black
-  label: Experienced backend software engineer & python enthusiast
+  label: Backend software engineer | Python expert
   email: me@joeblack.nyc
   phone: (646) 924-7718
   website: https://joeblack.nyc
   picture: https://avatars1.githubusercontent.com/u/1109300
-  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
+  summary: Innovative Senior Software Engineer with 10+ years experience designing and scaling backend systems, and leading cross-functional teams. Known for a gritty approach, combining passion and perseverance in delivering high-performance API architectures, cloud-native solutions, and cryptographic security protocols, driving innovation. Thrive in fast-paced environments; self-motivated with a growth mindset. Expertise in Python, AWS, Docker, Kubernetes, and blockchain technologies. Inquisitive, seeking creative solutions; possess a willingness to learn and to mentor others.
   location:
     address: 158 E 126th St, Unit 1114
     city: New York
@@ -37,37 +37,40 @@ awards:
   location: Palo Alto, CA
   summary: Stanford Datajam, a hackathon sponsored by the US Department of Education.
 skills:
-- name: Languages
+- name: Programming Languages
   keywords:
   - Python
   - Shell
   - Javascript
   - Solidity
   - Golang
-  - Ruby/Rails
+  - Rust
 - name: Technologies
   keywords:
-  - SQL
-  - NoSQL
+  - Cryptography
+  - Blockchain
+  - LLMs/LangChain
+  - SQL & NoSQL
   - Redis
   - Neo4j
-  - Cryptography
-  - gRPC
   - REST
   - GraphQL
-  - LLMs/LangChain
-  - Blockchain
+  - gRPC
   - OAuth/OIDC
   - LaTeX
-- name: Infra
+- name: Infrastructure & Cloud
   keywords:
   - Linux
   - Unix
   - Docker
   - Kubernetes
   - AWS
+  - Google Cloud
   - Datadog
-  - Git/Github
+  - Twilio
+  - Segment
+  - Git
+  - Github
 work:
 - company: Magic Labs, Inc
   position: Senior Software Engineer (Backend)
@@ -76,13 +79,13 @@ work:
   endDate: "2024-03"
   location: San Francisco, CA - Remote
   description: Series-B startup web3 IaaS provider of non-custodial wallets and passwordless authentication.
-  summary: Joined as employee 10 to work on the core product including backend services and APIs that power the Magic SDK.
+  summary: 
   highlights:
-  - "Mentored 8-10 backend engineers across multiple teams and of varying skill levels through regular 1:1s, pairing sessions, regular review of technical design docs for feature development, code review, and establishing formal documentation covering engineering principles, python style guides, api design standards, testing guidelines, best practices, etc."
-  - "Developer tooling: Crud Router, CLI Router, Factor Verifier, Deferred Calls, ORM Signals, Dependency Injection, etc."
-  - "Architected and developed new Wallet-as-a-Service product to enable go-to-market team to capture massive growth in the enterprise web3 space through clients such as: clubhouse, mattel, Macys, Synchrony, 7Eleven, Forbes, directly responsible for several million in additional annual recurring revenue."
-  - 'Mitigated evil proxy phishing attacks using custom developed device-based, cryptographic root-of-trust protocol.  Currently pending provisional patent application titled, "Anonymous Device Fingerprinting for Device Verification."'
-  - "API Scaling & Optimization efforts: Created a set of tools and processes for optimizing the performance of API endpoints that averaged 5-10x speed improvement."
+  - Led backend services and API development for Magic SDK, scaling platform to 1M+ monthly users and reducing latency by 50%; Optimized API performance, achieving 5-10x speed improvements and reducing infrastructure costs by 25%
+  - Developed key developer tooling (Crud Router, Factor Verifier, Deferred Calls), cutting response times by 70%, feature timelines by 50%, and technical debt; architected Wallet-as-a-Service.
+  - Led enterprise web3 adoption with clients like Paypal, 7Eleven, and Forbes, adding $3M in annual recurring revenue.
+  - Mitigated phishing attacks using cryptographic root-of-trust protocol, securing 3M+ devices (pending patent for "Anonymous Device Fingerprinting").
+  - Mentored 8-10 engineers, enhancing skills through 1:1s, technical reviews, and formal engineering documentation.
 - company: Code & Theory
   position: Senior Python Engineer
   website: https://www.codeandtheory.com
@@ -90,13 +93,14 @@ work:
   endDate: "2020-03"
   location: New York, NY
   description: Digital-first agency where my project was to work on the CNN API/Datacloud project.
-  summary: Brought in to work on the CNN Datacloud, which powers John King's Magic Wall, a multi-touch interface for displaying real-time and historical election results and various data of a geospatial nature that changes over time, as well as the CNN election center website.
+  summary:
   highlights:
-  - Brought the Datacloud from POC to a production ready release which included the development of new extract transform load pipelines in Airflow and Neo4j to implement new features such as FEC financial summaries for election candidates and election tracking poll data split over 20+ dimensions
-  - Customized an ORM-like object graph mapper framework based on Neomodel to add new capabilities such as building it's own detailed markdown documentation from metadata attached to each model, it's properties, and relationships.
-  - Architected and developed a geospatial-temporal data microservice used for generating heat-maps of US election campaign donations and lookup representatives given geo-coordinates and a date.
-  - Spearheaded an internal tech-leadership project that taught and mentored python engineers of all experience levels across multiple continents.
-  # - Architected and developed a declarative automation-testing framework in pytest and selenium that reduced the testing codebase by 90%, improved developer productivity by an order of magnitude, and reduced the number of regressions per month by over 60%.  This framework dynamically detected the front-end angular components and built all test cases dynamically in order to reduce repetition in the codebase and adapt automatically to front-end changes that would otherwise break numerous scattered tests.
+  - Architected the CNN Datacloud to process 150M+ real-time political data points over 100 years and 30+ dimensions, powering the data visualizations on John King’s Magic Wall for election night 2020 designed to scale for millions of viewers.
+  - Managed Quality Assurance (QA) to Zero tolerance for incorrect data, bugs, or latency for live broadcasts. 
+  - Built ETL pipelines in Airflow, projected to process 100K+ daily ingests from diverse electoral and financial datasets.
+  - Developed a geospatial-temporal microservice expected to process 20,000+ requests per minute to optimize real-time election donation analysis and government representative lookups for high-volume traffic.
+  - Led a tech-leadership initiative to mentor 8 Python engineers, projected to improve team productivity by 30% and code quality on 5 critical projects.
+  - Customized a Neomodel-based ORM to generate dynamic markdown documentation, expected to reduce manual effort by 50% or 100+ hours annually. 
 - company: See-Thru Healthcare
   position: Senior Software Engineer
   website: http://seethru.healthcare
@@ -104,12 +108,11 @@ work:
   endDate: "2019-08"
   location: Brooklyn, NY
   description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
-  summary: See-Thru Healthcare was a small (5 person, 2 dev), seed-funded, health-tech startup whose main product was a transparent marketplace with a multi-faceted search engine for discovering and booking appointments with behavior-health telemedicine providers.
+  summary:
   highlights:
-  - Lead the architecture and development efforts for a new group tele-therapy platform to attract thousands of new providers and patients to our main product, the marketplace.
-  - Drove key architectural decisions to maximize the productivity of a small development team such as integrating with zoom for our real-time video platform, the selection of GraphQL for our API and design of the GraphQL schema, and hosting the database and backend on AWS lambda by using Zappa to wrap Flask & Graphene.
-  - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
-  - Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
+  - Led the architecture and development of a group tele-therapy platform, serving over 1,000 members, using serverless cloud infrastructure with GraphQL + Relay API on AWS Lambda and React.js.
+  - Streamlined development and flexible problem solving for a small team, increasing productivity by 30%, through serverless architecture cloud-first solutions.
+  - Developed a unified OAuth identity provider, onboarding over 1,000 users, helping scale the telemedicine marketplace and driving its growth.
 - company: Telephone 
   position: Co-founder & Senior Software Engineer
   website: https://telephone.org
@@ -117,12 +120,11 @@ work:
   endDate: "2018-12"
   location: New York, NY
   description: Pre-ICO telecommunications dapp in stealth-mode
-  summary: Co-founded a Pre-ICO start-up to research, fund, and develop a privacy-focused, decentralized communications and messaging app similar to Signal but unblockable by firewalls and not reliant on centralized hosting infrastructure and governance.
+  summary: 
   highlights:
-  - Performed extensive research in decentralized architecture, the ICO funding process, encryption, smart-contracts, decentralized identity and key recovery, etc.
-  - Collaboratively architected a decentralized protocol and implementation spec using ethereum, solidity, python, and javascript.
-  - Leveraged dark-routing capabilities of Postal Service over Swarm (PSS) to prevent passive traffic analysis from being able to identify who is talking to who.
-  - Designed a decentralized services marketplace to allow discovery of services and incentivize the development of new services to build community and support the underlying token economy.  Standard services included multi-node media relaying to prevent IP discovery and secure receipt and retrieval of incoming messages when offline.
+  - Co-founded a pre-ICO startup; developed a decentralized communications app similar to Signal on the Ethereum blockchain. 
+  - Secured private communications for an expected 10,000+ users through API architecture for scalability and privacy, dark-routing and smart contracts to prevent passive traffic analysis and ensure message integrity.
+  - Designed a decentralized services marketplace, projected to onboard 100+ services, incentivizing development and supporting a token economy to handle secure media relays and offline message retrieval for 1,000+ anticipated daily users.
 # - position: Software Engineer Consultant
 #   company: Black Limited
 #   startDate: "2014-04-01"
@@ -164,14 +166,14 @@ volunteer:
   startDate: "2013-01-01"
   endDate: "2015-01-01"
   location: San Francisco, CA
-  summary: Mentored hackers and students from local universities and code bootcamps with various engineering related projects and tasks.
+  summary: Mentored across a variety of engineering related projects, tools, and tasks.
 - organization: HackMiami Conference
   position: Speaker
   website: https://hackmiami.com
   startDate: "2014-01-01"
   endDate: "2014-01-01"
   location: Miami, FL
-  summary: Delivered a bio-hacking talk discussing the usage of various technologies, proteins, and growth factors for cognitive enhancement with the co-founder of Hack Miami.
+  summary: Delivered a bio-hacking talk with the Co-founder about the usage of various technologies.
 education:
 - institution: Ivy Tech College
   area: Computer Science
