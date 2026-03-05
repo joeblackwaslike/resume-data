@@ -1,0 +1,91 @@
+# JSON Patch for Anthropic Sandboxing role application
+# Apply on top of resume_base_v3.5.yaml
+
+- op: replace
+  path: /meta/patch
+  value: anthropic
+
+- op: replace
+  path: /meta/focus
+  value: infrastructure-developer-tooling
+
+- op: replace
+  path: /meta/company
+  value: anthropic
+
+- op: replace
+  path: /basics/label
+  value: Backend Software Engineer | Python Expert | Infrastructure & Developer Tooling
+
+- op: replace
+  path: /basics/summary
+  value: Senior Backend Engineer with 10+ years of experience architecting, scaling, and maintaining backend systems and developer-facing SDKs that support millions of users. Deep expertise in Python with a proven track record of improving reliability, reducing error rates, and crafting developer tooling that teams love to use. Experienced designing and operating distributed systems for millions of users, conducting incident response and root cause analysis, and translating internal team needs into durable platform improvements. Currently exploring AI/LLM infrastructure and agentic systems, with a growing interest in the safety and reliability challenges that come with giving AI models access to external systems.
+
+- op: replace
+  path: /skills
+  value:
+  - name: Languages
+    keywords:
+    - Python
+    - Shell
+    - Javascript
+    - Typescript
+    - Node.js
+    - Solidity
+    - Golang
+    - Ruby/Rails
+    - Rust
+    - HTML
+    - CSS
+  - name: Technologies
+    keywords:
+    - Crypto
+    - SQL
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - Redis
+    - Neo4j
+    - REST
+    - GraphQL
+    - OAuth/OIDC
+    - FastAPI
+    - LaTeX
+  - name: Infra & Cloud
+    keywords:
+    - Linux
+    - Unix
+    - Docker
+    - Kubernetes
+    - AWS
+    - Google Cloud
+    - Datadog
+    - Twilio
+    - Segment
+    - Git
+    - Github
+  - name: AI / LLM
+    keywords:
+    - LangChain
+    - LangGraph
+    - LlamaIndex
+    - Pydantic-AI
+    - MCP
+    - RAG
+    - vector embeddings
+    - Claude Code
+    - context engineering
+  - name: Soft Skills
+    keywords:
+    - Entrepreneurial
+    - Self Driven
+    - Owner
+    - Growth Mindset
+    - Mentor
+    - Reliable
+    - Creative
+    - Innovative
+    - Resilient
+    - Adaptable
+    - Flexible
+    - Collaboration

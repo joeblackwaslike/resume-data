@@ -1,0 +1,125 @@
+meta:
+  version: v1.0
+  lastModified: "2025-11-17"
+  name: resume
+  role: customer-service
+  focus:
+  company:
+  patch: cs
+  notes:
+  theme: elegant
+  exclude:
+  - awards
+  - skills
+  - education
+  - volunteer
+  - projects
+
+basics:
+  name: Joe Black
+  label: Customer Support Specialist
+  email: joeblackcodes@gmail.com
+  phone: "415.494.9563"
+  website: joeblack.nyc
+  image: https://avatars1.githubusercontent.com/u/1109300
+  summary: Results-driven experienced engineer with 10+ years of experience helping users succeed with complex technical products. Expert at translating technical concepts into clear, actionable guidance for both technical and non-technical audiences. Proven track record mentoring teams, creating comprehensive documentation, and improving customer experience through strategic tooling and process optimization. Successfully supported products serving millions of users across web3, SaaS, and enterprise sectors. Seeking to leverage deep technical expertise and passion for helping others to deliver exceptional customer support experiences.
+  location:
+    address: 158 E 126th St, Unit 1114
+    city: New York
+    region: NY
+    postalCode: "10035"
+    countryCode: US
+  profiles:
+  - network: LinkedIn
+    username: joeblack949
+    url: https://www.linkedin.com/in/joeblack949
+  - network: Github
+    username: joeblackwaslike
+    url: https://github.com/joeblackwaslike
+
+skills:
+- name: Technical Support
+  keywords:
+  - Technical Troubleshooting
+  - Problem Resolution
+  - API Integration Support
+  - Developer Documentation
+  - Customer Education
+  - Cross-functional Collaboration
+  - Ticket Management
+
+- name: Technical Expertise
+  keywords:
+  - Python
+  - JavaScript
+  - REST APIs
+  - GraphQL
+  - SQL
+  - PostgreSQL
+  - MongoDB
+  - Redis
+  - AWS
+  - Google Cloud
+  - Docker
+  - Kubernetes
+  - Git
+  - Github
+  - Web3
+- name: Soft Skills
+  keywords:
+  - Clear Communication (Written & Verbal)
+  - Documentation Excellence
+  - Process Improvement
+  - Organized
+  - Reliable
+  - Adaptable
+  - Collaborative
+
+work:
+- name: Magic Labs, Inc
+  position: Senior Software Engineer (Backend)
+  url: https://magic.link
+  startDate: "2020-12"
+  endDate: "2024-03"
+  location: San Francisco, CA - Remote
+  summary: Series-B startup web3 IaaS provider of non-custodial wallets and passwordless authentication.
+  highlights:
+  - Supported 1M+ developers integrating Magic SDK by troubleshooting API issues, debugging integration problems, and providing clear, actionable solutions through documentation and direct support channels.
+  - Mentored 8-10 engineers through structured 1:1s and pairing sessions, demonstrating ability to explain complex technical concepts and guide users through challenging problems with patience and clarity.
+  - Created comprehensive developer documentation including Python style guides, API standards, testing best practices, and troubleshooting resources that reduced support ticket volume by ~30%.
+  - Collaborated with enterprise clients (PayPal, Clubhouse, Mattel, Macy's, 7-Eleven, Forbes) to understand their technical needs, troubleshoot implementation issues, and ensure successful product adoption.
+- name: Code & Theory
+  position: Senior Python Engineer
+  url: https://www.codeandtheory.com
+  startDate: "2019-08"
+  endDate: "2020-03"
+  location: New York, NY
+  summary: Digital-first agency where my project was to work on the CNN API/Datacloud project.
+  highlights:
+  - Led cross-continental mentorship program for 8 Python engineers of various experience levels, improving team productivity by 30% through clear communication, documentation, and hands-on training.
+  - Developed self-service documentation that automatically generated comprehensive markdown guides from system metadata, reducing support burden by approximately 100 hours annually.
+  - Collaborated with CNN editorial and technical teams to understand requirements and troubleshoot issues with the CNN Datacloud platform during critical 2020 election coverage viewed by millions.
+  - Ensured zero-error tolerance for data processing systems supporting live broadcasts, demonstrating attention to detail and ability to work under high-pressure, customer-critical situations.
+- name: See-Thru Healthcare
+  position: Senior Software Engineer
+  url: http://seethru.healthcare
+  startDate: "2019-04"
+  endDate: "2019-08"
+  location: Brooklyn, NY
+  summary: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
+  highlights:
+  - Onboarded 1,000+ members and providers to group tele-therapy platform, providing technical guidance, troubleshooting access issues, and ensuring smooth user experience across web and mobile platforms.
+  - Implemented OAuth identity solution that streamlined user authentication experience and reduced support tickets related to login/access issues by ~40%.
+  - Gathered and synthesized customer feedback to inform product improvements, working closely with 2-person development team to prioritize features that addressed user pain points
+- name: Telephone 
+  position: Co-founder & Senior Software Engineer
+  url: https://telephone.org
+  startDate: "2017-06"
+  endDate: "2018-12"
+  location: New York, NY
+  summary: Pre-ICO telecommunications dapp in stealth-mode
+  highlights:
+  - Supported 10,000+ potential users of decentralized communications platform by creating technical documentation, tutorials, and troubleshooting guides for blockchain-based messaging system.
+  - Engaged with developer community to understand pain points, gather feedback, and provide technical assistance for integration with Ethereum-based smart contracts.
+  - Created educational content explaining complex privacy and security concepts in accessible language for both technical and non-technical audiences.
+

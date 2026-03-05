@@ -1,0 +1,35 @@
+- op: replace
+  path: /meta/patch
+  value: cs
+- op: replace
+  path: /basics/label
+  value: Backend software engineer | Python expert
+- op: replace
+  path: /basics/email
+  value: joeblackcodes@gmail.com
+- op: replace
+  path: /basics/phone
+  value: "415.494.9563"
+- op: replace
+  path: /basics/summary
+  value: Innovative Senior Backend Engineer with 10+ years of experience architecting and scaling high-performance systems that support millions of users. Expert in Python and blockchain technologies with a proven track record of delivering critical backend infrastructure across fintech, media, and healthcare sectors. Combines technical leadership with mentorship capabilities, having successfully led engineering teams to deliver enterprise-grade web3 solutions generating millions in revenue. Known for building robust, secure systems with cryptographic protocols and optimizing API performance while reducing infrastructure costs. Seeking roles where my expertise in distributed systems can drive meaningful product evolution.
+- op: replace
+  path: /skills/1/keywords
+  value:
+  - Cryptography
+  - AI/LLM/LangChain
+  - Blockchain
+  - SQL
+  - NoSQL
+  - Redis
+  - Neo4j
+  - REST
+  - GraphQL
+  - OAuth/OIDC
+  - LaTeX
+- op: replace
+  path: /skills/0/keywords
+  value:
+  - Python
+  - Shell
+  - Javascript

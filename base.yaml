@@ -1,6 +1,6 @@
 meta:
-  version: v3.2
-  lastModified: "2025-03-19"
+  version: v3.4
+  lastModified: "2026-02-15"
   name: resume
   role: backend-software-engineer
   focus:
@@ -13,11 +13,12 @@ meta:
 basics:
   name: Joe Black
   label: Backend software engineer | Python expert
-  email: me@joeblack.nyc
+  email: joeblackwaslike@gmail.com
   phone: "646.924.7718"
   website: joeblack.nyc
   image: https://avatars1.githubusercontent.com/u/1109300
-  summary: Innovative Senior Software Engineer with 10+ years experience designing and scaling backend systems, and leading cross-functional teams. Known for a gritty approach, combining passion and perseverance in delivering high-performance API architectures, cloud-native solutions, and cryptographic security protocols, driving innovation. Thrive in fast-paced environments; self-motivated with a growth mindset. Expertise in Python, AWS, Docker, Kubernetes, and blockchain technologies. Inquisitive, seeking creative solutions; possess a willingness to learn and to mentor others.
+  # summary: Senior Software Engineer with 10+ years of experience designing and scaling backend systems and leading cross-functional teams. Known for a gritty approach, combining passion and perseverance in delivering high-performance API architectures, cloud-native solutions, and cryptographic security protocols. Thrive in fast-paced environments; self-motivated with a growth mindset. Expertise in Python, AWS, Docker, Kubernetes, and blockchain technologies.
+  summary: Senior Backend Engineer with 10+ years of experience architecting, scaling, and maintaining backend systems and developer-facing SDKs that support millions of users. Deep expertise in Python with a proven track record of improving reliability, reducing error rates, and crafting developer tooling that teams love to use. Experienced designing and operating distributed systems for millions of users, conducting incident response and root cause analysis, and translating internal team needs into durable platform improvements.
   location:
     address: 158 E 126th St, Unit 1114
     city: New York
@@ -43,6 +44,7 @@ skills:
   - Python
   - Shell
   - Javascript
+  - Typescript
   - Node.js
   - Solidity
   - Golang
@@ -53,7 +55,6 @@ skills:
 - name: Technologies
   keywords:
   - Crypto
-  - Blockchain
   - AI/LLM/LangChain
   - SQL
   - PostgreSQL
@@ -83,8 +84,9 @@ skills:
   keywords:
   - Entrepreneurial
   - Self Driven
+  - Owner
+  - Growth Mindset
   - Mentor
-  - Organized
   - Reliable
   - Creative
   - Innovative
@@ -101,9 +103,10 @@ work:
   location: San Francisco, CA - Remote
   summary: Series-B startup web3 IaaS provider of non-custodial wallets and passwordless authentication.
   highlights:
-  - Led backend services and API development for Magic SDK, scaling SaaS platform to support millions of monthly users while architecting optimization tools that improved endpoint performance by 5-10x and reduced infrastructure costs by ~25%.
-  - Architected and developed Wallet-as-a-Service product enabling enterprise web3 adoption with clients including PayPal, Clubhouse, Mattel, Macy's, 7-Eleven, and Forbes, directly contributing millions in annual recurring revenue.
-  - Created essential developer tooling ecosystem (CRUD Router, CLI Router, Factor Verifier, Deferred Calls, ORM Signals) that reduced feature development time by approximately 50% while improving code quality and reducing technical debt.
+  - Led backend development for Magic SDK, scaling the platform from 16K to 200K+ developers, including re-architecting a synchronous platform to scale from 100K to 1M+ active users in under 30 days to close a $1M ARR enterprise contract.
+  - Architected and launched Wallet-as-a-Service, driving $3M in ARR and enabling enterprise web3 adoption for clients including PayPal, Clubhouse, Mattel, Macy's, 7-Eleven, and Forbes.
+  - Reduced API endpoint error rates and improved latency by 5–10x by building systematic observability tooling and conducting root cause analysis on P0/P1 incidents through rigorous on-call rotations.
+  - Built an internal developer tooling ecosystem (CRUD Router, CLI Router, Factor Verifier, Deferred Calls, ORM Signals) adopted across backend teams that reduced feature development time by ~50% while improving code quality and reducing technical debt.
   - Mitigated phishing attacks with minimal impact to user experience by designing and implementing a device-based cryptographic root-of-trust protocol securing over 3M devices, resulting in patent "Anonymous Device Fingerprinting for Device Verification".
   - Mentored 8-10 backend engineers across multiple teams through structured 1:1s, pairing sessions, technical design reviews, and establishing comprehensive engineering documentation covering Python style guides, API standards, and testing best practices.
 - name: Code & Theory
@@ -115,7 +118,7 @@ work:
   summary: Digital-first agency where my project was to work on the CNN API/Datacloud project.
   highlights:
   - Architected and scaled CNN Datacloud from proof-of-concept to production, processing 150M+ political data points spanning 100 years and 30+ dimensions to power John King's Magic Wall for the 2020 election night broadcast viewed by millions.
-  - Implemented critical ETL pipelines using Airflow and Neo4j that processed 100K+ daily ingests from diverse sources, integrating FEC financial summaries and multi-dimensional polling data with zero tolerance for errors during live broadcasts.
+  - Implemented critical ETL pipelines using Airflow and Neo4j that processed 100K+ daily ingests from diverse sources, integrating FEC financial summaries and multi-dimensional polling data with zero tolerance for errors during live broadcasts, proactively identifying and resolving failure modes before they impacted air time.
   - Developed a high-performance geospatial-temporal microservice handling 20,000+ requests per minute for real-time election donation heat-maps and representative lookups by location and date, critical for CNN's election center website.
   - Enhanced a Neomodel-based object graph mapper with custom capabilities that automatically generated comprehensive markdown documentation from model metadata, reducing documentation effort by approximately 100 hours annually.
   - Led a cross-continental technical mentorship program for 8 Python engineers of various experience levels, improving team productivity by 30% across 5 critical projects while establishing consistent coding standards.
@@ -129,9 +132,9 @@ work:
   highlights:
   - Led architecture and development for a behavioral health tech startup (5-person team, seed-funded) building a group tele-therapy platform that served 1,000+ members and drove thousands of new providers to our core marketplace product.
   - Made strategic technology decisions to maximize productivity of our 2-person development team, including serverless cloud architecture (AWS Lambda/Zappa) and Zoom integration for video, resulting in 30% faster development cycles.
-  - Designed and implemented a GraphQL/Relay API using Python (Flask, Graphene) that enabled more modular, declarative, and reusable components in our React.js frontend, significantly improving application maintainability.
-  - Architected a unified OAuth identity solution using AWS Cognito that streamlined user experience across products, successfully onboarding 1,000+ users while directing growth to our core marketplace.
-- name: Telephone 
+  - Designed and implemented a GraphQL/Relay API using Python (Flask, Graphene) that enabled more modular, declarative, and reusable components in our React.js frontend.
+  - Architected a unified OAuth identity solution using AWS Cognito, consolidating identity across products to drive users toward the core marketplace.
+- name: Telephone
   position: Co-founder & Senior Software Engineer
   url: https://telephone.org
   startDate: "2017-06"
@@ -139,10 +142,10 @@ work:
   location: New York, NY
   summary: Pre-ICO telecommunications dapp in stealth-mode
   highlights:
-  - Co-founded a pre-ICO blockchain startup, leading extensive research and development of a decentralized communications protocol on Ethereum comparable to Signal but with enhanced privacy features.
+  - Co-founded a pre-ICO blockchain startup and led architecture of a decentralized communications protocol on Ethereum, comparable to Signal but with enhanced privacy features.
   - Architected and implemented a secure messaging system using Solidity, Python, and JavaScript that leveraged Postal Service over Swarm (PSS) dark-routing capabilities to prevent traffic analysis and protect user identity for 10,000+ potential users.
   - Designed smart contracts for message integrity verification and secure multi-node media relaying, ensuring IP address protection and enabling offline message retrieval without compromising security.
-  - Created a decentralized services marketplace supporting 100+ anticipated services that incentivized developer contributions through a token economy, driving community growth and platform adoption while maintaining core privacy principles.
+  - Designed a decentralized services marketplace with a token economy to incentivize developer contributions, driving community growth and platform adoption while maintaining core privacy principles.
 # - position: Software Engineer Consultant
 #   name: Black Limited
 #   startDate: "2014-04-01"
@@ -217,7 +220,7 @@ projects:
 - name: cookiecutter-uv
   type: open-source
   language: python
-  description: A modern cookiecutter template for Python projects that use uv, ruff, wps, and pre-commit
+  description: A modern cookiecutter template for Python projects that uses uv, ruff, wps, and pre-commit
   url: https://github.com/joeblackwaslike/cookiecutter-uv
   github:
     org: joeblackwaslike
