@@ -1,0 +1,41 @@
+# JSON Patch for full-stack software engineering roles
+# Apply on top of resume_base_v3.6.yaml
+# Use for roles that emphasize full-stack development, product building, or end-to-end ownership
+
+- op: replace
+  path: /meta/patch
+  value: fullstack
+
+- op: replace
+  path: /basics/label
+  value: Software Engineer | Python Expert | Full-Stack Development
+
+- op: replace
+  path: /basics/summary
+  value: Software Engineer with 10+ years of experience building full-stack applications, developer tools, and platforms from conception to delivery. Deep expertise in Python and modern web technologies with a proven track record of architecting scalable backend systems, crafting intuitive user interfaces, and shipping complete products that users rely on daily. Experienced translating requirements into technical solutions, rapid prototyping, and taking ownership of entire product areas. Currently building AI-assisted tools and workflow automation platforms.
+
+- op: replace
+  path: /skills/1/keywords
+  value:
+  - Crypto
+  - AI/LLM/LangChain
+  - React/TypeScript
+  - SQL
+  - PostgreSQL
+  - MySQL
+  - MongoDB
+  - Redis
+  - Neo4j
+  - REST
+  - GraphQL
+  - OAuth/OIDC
+  - FastAPI
+  - LaTeX
+
+- op: replace
+  path: /work/0/highlights/0
+  value: Led development of Magic SDK — a developer-facing authentication platform — scaling from 16K to 200K+ developers, including re-architecting a synchronous platform to scale from 100K to 1M+ active users in under 30 days to close a $1M ARR enterprise contract.
+
+- op: replace
+  path: /projects/1/description
+  value: Full-stack job search platform with dashboard, data visualizations, and AI-assisted workflows. Features include a Chrome extension for automatic tracking, task orchestration, iterative refinement workflows, and privacy-first integration design. Built with TanStack Start, React 19, Supabase, and shadcn/ui.

@@ -1,0 +1,110 @@
+# JSON Patch for Anthropic Research Tools role application
+# Apply on top of resume_base_v3.5.yaml
+
+- op: replace
+  path: /meta/patch
+  value: anthropic-research-tools
+
+- op: replace
+  path: /meta/focus
+  value: research-tools-developer-platforms
+
+- op: replace
+  path: /meta/company
+  value: anthropic
+
+- op: replace
+  path: /basics/label
+  value: Software Engineer | Python Expert | Research Tools & Developer Platforms
+
+- op: replace
+  path: /basics/summary
+  value: Software Engineer with 10+ years of experience building full-stack applications, developer tools, and platforms that technical users rely on daily. Deep expertise in Python and modern web technologies with a proven track record of rapid prototyping, gathering user feedback, and iterating to ship tools that teams love to use. Experienced partnering with technical stakeholders to understand workflows, translating requirements into intuitive interfaces, and taking ownership of complete product areas from conception to delivery. Currently building AI-assisted research tools and workflow automation platforms.
+
+- op: replace
+  path: /skills
+  value:
+  - name: Languages
+    keywords:
+    - Python
+    - Shell
+    - Javascript
+    - Typescript
+    - Node.js
+    - Solidity
+    - Golang
+    - Ruby/Rails
+    - Rust
+    - HTML
+    - CSS
+  - name: Technologies
+    keywords:
+    - Crypto
+    - AI/LLM/LangChain
+    - React/TypeScript
+    - SQL
+    - PostgreSQL
+    - MySQL
+    - MongoDB
+    - Redis
+    - Neo4j
+    - REST
+    - GraphQL
+    - OAuth/OIDC
+    - FastAPI
+  - name: Infra & Cloud
+    keywords:
+    - Linux
+    - Unix
+    - Docker
+    - Kubernetes
+    - AWS
+    - Google Cloud
+    - Datadog
+    - Twilio
+    - Segment
+    - Git
+    - Github
+  - name: AI / LLM
+    keywords:
+    - LangChain
+    - LangGraph
+    - LlamaIndex
+    - Pydantic-AI
+    - MCP
+    - RAG
+    - Vector Embeddings
+    - Claude Code
+    - Context Engineering
+  - name: Soft Skills
+    keywords:
+    - Entrepreneurial
+    - Self Driven
+    - Owner
+    - Growth Mindset
+    - Mentor
+    - Reliable
+    - Creative
+    - Innovative
+    - Resilient
+    - Adaptable
+    - Flexible
+    - Collaboration
+
+- op: replace
+  path: /work/0/highlights/0
+  value: Led development of Magic SDK — a developer-facing authentication platform — scaling from 16K to 200K+ developers, including re-architecting a synchronous platform to scale from 100K to 1M+ active users in under 30 days to close a $1M ARR enterprise contract.
+
+- op: replace
+  path: /work/0/highlights
+  value:
+  - Led development of Magic SDK — a developer-facing authentication platform — scaling from 16K to 200K+ developers, including re-architecting a synchronous platform to scale from 100K to 1M+ active users in under 30 days to close a $1M ARR enterprise contract.
+  - Architected and launched Wallet-as-a-Service, driving $3M in ARR and enabling enterprise web3 adoption for clients including PayPal, Clubhouse, Mattel, Macy's, 7-Eleven, and Forbes.
+  - Built an internal developer tooling ecosystem (CRUD Router, CLI Router, Factor Verifier, Deferred Calls, ORM Signals) adopted across backend teams that reduced feature development time by ~50% based on feedback from internal teams, while improving code quality and reducing technical debt.
+  - Reduced API endpoint error rates and improved latency by 5–10x by building systematic observability tooling and conducting root cause analysis on P0/P1 incidents through rigorous on-call rotations.
+  - Mitigated phishing attacks with minimal impact to user experience by designing and implementing a device-based cryptographic root-of-trust protocol securing over 3M devices, resulting in patent "Anonymous Device Fingerprinting for Device Verification".
+  - Mentored 8-10 backend engineers across multiple teams through structured 1:1s, pairing sessions, technical design reviews, and establishing comprehensive engineering documentation covering Python style guides, API standards, and testing best practices.
+
+- op: replace
+  path: /projects/1/description
+  value: Full-stack job search platform with dashboard, data visualizations, and AI-assisted workflows. Features include a Chrome extension for automatic tracking, multi-stage task orchestration with human-in-the-loop approval, iterative document refinement, and privacy-first integration design. Built with TanStack Start, React 19, Supabase, and shadcn/ui.
