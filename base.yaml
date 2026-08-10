@@ -355,7 +355,6 @@ projects:
 #   - base-image
 publications:
 - name: "I Thought I'd Lost the Plot. I Was Writing It."
-  publisher: "joeblack.nyc"
   releaseDate: "2026-08-10"
   website: "https://example.com"
   summary: "Essay on the operational scaffolding required for reliable autonomous coding agents — adversarial design review, agent-native issue tracking, tiered verification, and a memory system that recursively indexed itself into 8,500+ sessions in two days."
