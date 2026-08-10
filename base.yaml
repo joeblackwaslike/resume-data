@@ -1,6 +1,6 @@
 meta:
-  version: v3.5
-  lastModified: "2026-03-05"
+  version: v4.1
+  lastModified: "2026-08-09"
   name: resume
   role: backend-software-engineer
   focus:
@@ -13,12 +13,12 @@ meta:
 basics:
   name: Joe Black
   label: Backend software engineer | Python expert
-  email: joeblackwaslike@gmail.com
+  email: me@joeblack.nyc
   phone: "646.924.7718"
   website: joeblack.nyc
   image: https://avatars1.githubusercontent.com/u/1109300
-  # summary: Senior Software Engineer with 10+ years of experience designing and scaling backend systems and leading cross-functional teams. Known for a gritty approach, combining passion and perseverance in delivering high-performance API architectures, cloud-native solutions, and cryptographic security protocols. Thrive in fast-paced environments; self-motivated with a growth mindset. Expertise in Python, AWS, Docker, Kubernetes, and blockchain technologies.
-  summary: Senior Backend Engineer with 10+ years of experience architecting, scaling, and maintaining backend systems and developer-facing SDKs that support millions of users. Deep expertise in Python with a proven track record of improving reliability, reducing error rates, and crafting developer tooling that teams love to use. Experienced designing and operating distributed systems for millions of users, conducting incident response and root cause analysis, and translating internal team needs into durable platform improvements.
+  # summary: Senior Backend Engineer with 10+ years of experience architecting, scaling, and maintaining backend systems and developer-facing SDKs that support millions of users. Deep expertise in Python with a proven track record of improving reliability, reducing error rates, and crafting developer tooling that teams love to use. Experienced designing and operating distributed systems for millions of users, conducting incident response and root cause analysis, and translating internal team needs into durable platform improvements.
+  summary: Senior Backend Engineer with 10+ years of experience architecting, scaling, and maintaining backend systems and developer-facing SDKs that support millions of users. Deep expertise in Python with a proven track record of improving reliability, reducing error rates, and crafting developer tooling that teams love to use. Experienced conducting incident response and root cause analysis, and translating internal team needs into durable platform improvements. More recently, building AI agent infrastructure — MCP servers, context-efficient code execution, and multi-agent PR review — with measured token reductions of up to 99% in production agent workflows.
   location:
     address: 158 E 126th St, Unit 1114
     city: New York
@@ -197,34 +197,52 @@ education:
   area: Computer Science
   location: Indianapolis, IN
 projects:
-- name: BTCPay-python
+- name: mcp-exec
   type: open-source
-  language: python
-  description: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
-  url: https://github.com/btcpayserver/btcpay-python
+  language: typescript
+  description: MCP server enabling sandboxed code execution for AI agents, keeping intermediate tool results out of the context window. Reduced token usage by up to 99.8% (52K to 50 tokens) on multi-tool workflows across Claude Code, Cursor, and other MCP-compatible agents.
+  url: https://github.com/joeblackwaslike/mcp-exec
   github:
-    org: btcpayserver
-    repo: btcpay-python
-    stars: 80
-    forks: 27
-  entity: BTCPay
+    org: joeblackwaslike
+    repo: mcp-exec
+    stars: 1
+    forks: 0
   roles:
   - Developer
   - Maintainer
   keywords:
-  - python
-  - cryptocurrency
-  - bitcoin
-  - RESTful APIs
-  - BTCPay
-- name: jobsearch-tracker
+  - typescript
+  - mcp
+  - agent-infrastructure
+  - sandboxing
+  - node.js
+- name: idiomatic
   type: open-source
-  language: typescript
-  description: Full-stack application for tracking job search workflows with dashboard, data visualizations, and workflow automation. Built with TanStack Start, React 19, Supabase, and shadcn/ui. Features authentication, RLS-secured database schema, comprehensive test coverage, and a Chrome extension for automatic tracking.
-  url: https://github.com/joeblackwaslike/jobsearch-tracker
+  language: rust
+  description: Language-abstracted idiom enforcement framework for AI coding agents and humans, built in Rust with Python and Node.js bindings. Sub-100ms autofix gate backed by ast-grep, eliminating repetitive code review feedback.
+  url: https://github.com/joeblackwaslike/idiomatic
   github:
     org: joeblackwaslike
-    repo: jobsearch-tracker
+    repo: idiomatic
+    stars: 1
+    forks: 0
+  roles:
+  - Developer
+  - Maintainer
+  keywords:
+  - rust
+  - ast-grep
+  - pyo3
+  - napi
+  - developer-tools
+- name: ai-review-bot
+  type: open-source
+  language: typescript
+  description: Autonomous multi-agent PR reviewer deployed on Vercel, orchestrating five specialized review agents (bugs, error handling, test coverage, security, quality) across both Claude and OpenAI models with automatic deduplication and model-tier routing.
+  url: https://github.com/joeblackwaslike/ai-review-bot
+  github:
+    org: joeblackwaslike
+    repo: ai-review-bot
     stars: 0
     forks: 0
   roles:
@@ -232,92 +250,52 @@ projects:
   - Maintainer
   keywords:
   - typescript
-  - react
-  - full-stack
-  - tanstack
-  - supabase
-  - chrome-extension
-- name: cookiecutter-uv
+  - vercel
+  - multi-agent
+  - code-review
+  - github-apps
+- name: lessons-learned
   type: open-source
-  language: python
-  description: A developer productivity tool for bootstrapping Python projects with modern tooling (uv, ruff, wps, pre-commit)
-  url: https://github.com/joeblackwaslike/cookiecutter-uv
+  language: typescript
+  description: Claude Code plugin providing persistent memory of failure patterns across AI agent sessions. Captures mistakes via structured tags and heuristic scanning, then injects preventive warnings before matching tool calls. Curated to 136 active lessons validated by 87 eval test scenarios, backed by 297 automated tests.
+  url: https://github.com/joeblackwaslike/lessons-learned
   github:
     org: joeblackwaslike
-    repo: cookiecutter-uv
-    stars: 1
+    repo: lessons-learned
+    stars: 0
     forks: 0
   roles:
   - Developer
   - Maintainer
   keywords:
-  - cookiecutter
-  - template
-  - python
-  - uv
-  - ruff
-  - docker
-- name: coinaddr
+  - typescript
+  - claude-code
+  - plugin
+  - developer-tools
+  - agent-memory
+  - eval-testing
+- name: spinup-py / spinup-ts
   type: open-source
-  language: python
-  description: Cryptocurrency address inspection/validation library for python
-  url: https://github.com/joeblackwaslike/coinaddr
+  language: python & typescript
+  description: Paired project-scaffolding CLIs with an identical CLI schema for Python and TypeScript. spinup-py standardizes on uv, ruff, mypy, and pytest; spinup-ts on pnpm, Biome, strict ESLint, and Vitest. Both support library/CLI/server/MCP-server project types with GitHub Actions CI and optional Docker/devcontainer setup. spinup-py evolved from cookiecutter-uv.
+  url: https://github.com/joeblackwaslike/spinup-py
   github:
     org: joeblackwaslike
-    repo: coinaddr
-    stars: 18
-    forks: 20
-  roles:
-  - Developer
-  - Maintainer
-  keywords:
-  - web3
-  - blockchain
-  - ethereum
-  - bitcoin
-  - python
-  - validation
-  - cryptocurrency
-- name: Pricing
-  type: open-source
-  language: python
-  description: A python package for aggregating, converting, and formatting of prices in a variety of currencies, including fiat, crypto, and custom.
-  url: https://github.com/joeblackwaslike/pricing
-  github:
-    user: joeblackwaslike
-    repo: pricing
-    stars: 15
+    repo: spinup-py
+    stars: 2
+    forks: 0
   roles:
   - Developer
   - Maintainer
   keywords:
   - python
-  - pricing
-  - money
-  - localization
-  - currency
-  - cryptocurrency
-  - currency exchange
-- name: TmplD
-  type: open-source
-  language: python
-  description: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
-  url: https://github.com/joeblackwaslike/tmpld
-  github:
-    user: joeblackwaslike
-    repo: tmpld
-    forks: 1
-  roles:
-  - Developer
-  - Maintainer
-  keywords:
-  - python
-  - containers
-  - docker
-  - kubernetes
-  - jinja2
-  - configuration
-  - microservices
+  - typescript
+  - uv
+  - ruff
+  - pnpm
+  - biome
+  - project-scaffolding
+  - mcp
 # - name: Docker-Kazoo
 #   type: open-source
 #   language: bash
@@ -375,3 +353,9 @@ projects:
 #   - bash
 #   - docker
 #   - base-image
+publications:
+- name: "I Thought I'd Lost the Plot. I Was Writing It."
+  publisher: "joeblack.nyc"
+  releaseDate: "2026-08-10"
+  website: "https://example.com"
+  summary: "Essay on the operational scaffolding required for reliable autonomous coding agents — adversarial design review, agent-native issue tracking, tiered verification, and a memory system that recursively indexed itself into 8,500+ sessions in two days."
