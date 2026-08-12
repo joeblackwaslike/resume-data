@@ -197,63 +197,6 @@ education:
   area: Computer Science
   location: Indianapolis, IN
 projects:
-- name: mcp-exec
-  type: open-source
-  language: typescript
-  description: MCP server enabling sandboxed code execution for AI agents, keeping intermediate tool results out of the context window. Reduced token usage by up to 99.8% (52K to 50 tokens) on multi-tool workflows across Claude Code, Cursor, and other MCP-compatible agents.
-  url: https://github.com/joeblackwaslike/mcp-exec
-  github:
-    org: joeblackwaslike
-    repo: mcp-exec
-    stars: 1
-    forks: 0
-  roles:
-  - Developer
-  - Maintainer
-  keywords:
-  - typescript
-  - mcp
-  - agent-infrastructure
-  - sandboxing
-  - node.js
-- name: idiomatic
-  type: open-source
-  language: rust
-  description: Language-abstracted idiom enforcement framework for AI coding agents and humans, built in Rust with Python and Node.js bindings. Sub-100ms autofix gate backed by ast-grep, eliminating repetitive code review feedback.
-  url: https://github.com/joeblackwaslike/idiomatic
-  github:
-    org: joeblackwaslike
-    repo: idiomatic
-    stars: 1
-    forks: 0
-  roles:
-  - Developer
-  - Maintainer
-  keywords:
-  - rust
-  - ast-grep
-  - pyo3
-  - napi
-  - developer-tools
-- name: ai-review-bot
-  type: open-source
-  language: typescript
-  description: Autonomous multi-agent PR reviewer deployed on Vercel, orchestrating five specialized review agents (bugs, error handling, test coverage, security, quality) across both Claude and OpenAI models with automatic deduplication and model-tier routing.
-  url: https://github.com/joeblackwaslike/ai-review-bot
-  github:
-    org: joeblackwaslike
-    repo: ai-review-bot
-    stars: 0
-    forks: 0
-  roles:
-  - Developer
-  - Maintainer
-  keywords:
-  - typescript
-  - vercel
-  - multi-agent
-  - code-review
-  - github-apps
 - name: lessons-learned
   type: open-source
   language: typescript
@@ -274,6 +217,64 @@ projects:
   - developer-tools
   - agent-memory
   - eval-testing
+- name: jobsearch-tracker
+  type: open-source
+  language: typescript
+  description: Full-stack job search platform with dashboard, data visualizations, and AI-assisted workflows. Features include a Chrome extension for automatic tracking, multi-stage task orchestration with human-in-the-loop approval, iterative document refinement, and privacy-first integration design. Built with TanStack Start, React 19, Supabase, and shadcn/ui.
+  url: https://github.com/joeblackwaslike/jobsearch-tracker
+  github:
+    org: joeblackwaslike
+    repo: jobsearch-tracker
+    stars: 0
+    forks: 0
+  roles:
+  - Developer
+  - Maintainer
+  keywords:
+  - typescript
+  - react
+  - full-stack
+  - tanstack
+  - supabase
+  - chrome-extension
+- name: mcp-exec
+  type: open-source
+  language: typescript
+  description: MCP server enabling sandboxed code execution for AI agents, keeping intermediate tool results out of the context window. Reduced token usage by up to 99.8% (52K to 50 tokens) on multi-tool workflows across Claude Code, Cursor, and other MCP-compatible agents.
+  url: https://github.com/joeblackwaslike/mcp-exec
+  github:
+    org: joeblackwaslike
+    repo: mcp-exec
+    stars: 1
+    forks: 0
+  roles:
+  - Developer
+  - Maintainer
+  keywords:
+  - typescript
+  - mcp
+  - agent-infrastructure
+  - sandboxing
+  - node.js
+- name: ai-review-bot
+  type: open-source
+  language: typescript
+  description: Autonomous multi-agent PR reviewer deployed on Vercel, orchestrating five specialized review agents (bugs, error handling, test coverage, security, quality) across both Claude and OpenAI models with automatic deduplication and model-tier routing.
+  url: https://github.com/joeblackwaslike/ai-review-bot
+  github:
+    org: joeblackwaslike
+    repo: ai-review-bot
+    stars: 0
+    forks: 0
+  roles:
+  - Developer
+  - Maintainer
+  keywords:
+  - typescript
+  - vercel
+  - multi-agent
+  - code-review
+  - github-apps
 - name: spinup-py / spinup-ts
   type: open-source
   language: python & typescript
@@ -356,5 +357,5 @@ projects:
 publications:
 - name: "I Thought I'd Lost the Plot. I Was Writing It."
   releaseDate: "2026-08-10"
-  url: "https://joeblackwaslike.substack.com/p/i-thought-id-lost-the-plot-i-was?r=15d36&utm_campaign=post-expanded-share&utm_medium=post%20viewer"
+  url: "https://joeblackwaslike.substack.com/p/i-thought-id-lost-the-plot-i-was?r=15d36&utm_campaign=resume_4_1&utm_source=substack&utm_medium=any"
   summary: "Essay on the operational scaffolding required for reliable autonomous coding agents — adversarial design review, agent-native issue tracking, tiered verification, and a memory system that recursively indexed itself into 8,500+ sessions in two days."
